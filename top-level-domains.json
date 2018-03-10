@@ -1,11 +1,9 @@
-[
+tld = [
   ".com",
   ".org",
   ".net",
   ".int",
   ".edu",
   ".gov",
-  ".mil",
-  ".org",
-  ".org"
-]
+  ".mil"
+];

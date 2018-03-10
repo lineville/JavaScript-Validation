@@ -161,8 +161,46 @@ function validatePassword() {
 
 }
 
-function validateDate() {}
+function validateDate() {
+  var date = new Date(document.getElementById('date').value);
+  var today = new Date();
+  // check that it is valid
+  if(date){
+    if((today.getFullYear() - date.getFullYear()) >= 10){
+      validate('date-result');
+    }
+    else{
+      error('date-result');
+    }
+  }
+  else{
+    error('date-result');
+  }
+
+}
+
+function genericDate() {
+  var date = document.getElementById('date');
+  date.innerHTML = "YYYY/MM/DD";
+
+}
 
 function validateZipcode() {}
 
-function validateState() {}
+//working except for the off-focus effect
+function validateState() {
+  var input = document.getElementById('state').value;
+  var bool = false;
+  for(var i=0; i<states.length; i++){
+    if((states[i].name == input) || (states[i].abbreviation == input.toUpperCase())){
+      bool = true;
+    }
+  }
+  if(bool){
+    validate('state-result');
+  }
+  else {
+    error('state-result');
+  }
+
+}

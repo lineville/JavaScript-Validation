@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="validate.js"></script>
+  <script type="text/javascript" src="validate.js"></script>
+  <script type="text/javascript" src="top-level-domains.json"></script>
+  <script type="text/javascript" src="us-states.json"></script>
+  <script type="text/javascript" src="valid-zipcodes.json"></script>
 </head>
 <body>
   <h1>CMPU-375&mdash;Assignment 02</h1>
@@ -59,7 +62,7 @@
 </p>
 <hr>
 
-<span>Birth Date: </span>  <input id="date"> <button type="button" onclick="validateDate()">Submit</button> <span style="color: gray;" id="date-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<span>Birth Date: </span>  <input id="date"> <button type="button" onclick="validateDate()" onfocusout="genericDate()">Submit</button> <span style="color: gray;" id="date-result">unverified</span><br><span style="float: right;">(10 points)</span>
 <p>
   <ul>
     <li>Should be a valid date as accepted without any error by the Javascript <code>Date</code> module </li>
