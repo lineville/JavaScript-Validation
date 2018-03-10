@@ -110,6 +110,7 @@ function validateEmail() {
   }
 }
 
+//works except for repeated substrings
 function validatePassword() {
   var input = document.getElementById('password').value;
   var pattern = new RegExp(/[^\w\d\s:]/); //regex for punctuation
@@ -185,7 +186,43 @@ function genericDate() {
 
 }
 
-function validateZipcode() {}
+function validateZipcode() {
+  var input = document.getElementById('zipcode').value;
+  var ans = false;
+
+  // checks if string is in the list of valid zipcodes
+  function isValidZip(str) {
+    var result = false;
+    for (var i = 0; i < zips.length; i++) {
+      if (zips[i] == str) {
+        result = true;
+      }
+    }
+    return result;
+  }
+
+  //check if it has the optional 4 digits.
+  if(input.length > 5 && (input.indexOf("-") > -1)){
+    var halves = input.split("-");
+    var firstFive = halves[0];
+    var lastFour = halves[1];
+    var onlyNums = new RegExp(/^\d+$/);
+    if(lastFour.length == 4 && onlyNums.test(lastFour) && isValidZip(firstFive)){
+      ans = true;
+    }
+  }
+  if(input.length == 5 && isValidZip(input)){
+    ans = true;
+  }
+
+  if(ans){
+    validate('zipcode-result');
+  }
+  else {
+    error('zipcode-result');
+  }
+
+}
 
 //working except for the off-focus effect
 function validateState() {
