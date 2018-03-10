@@ -1,0 +1,11 @@
+{
+  "valid": [
+    "Sameer Pradhan",
+    "Mr. Sameer Pradhan",
+    "Sameer Pradhan Jr."
+  ],
+  "invalid": [
+    "Sameer",
+    "Mr. Sameer"
+  ]
+}

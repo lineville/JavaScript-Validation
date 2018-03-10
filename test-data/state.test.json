@@ -1,0 +1,11 @@
+{
+  "valid": [
+    "New York",
+    "ny",
+    "NY"
+  ],
+  "invalid": [
+    "NEW YORK",
+    "nyc"
+  ]
+}

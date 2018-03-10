@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="validate.js"></script>
+</head>
+<body>
+  <h1>CMPU-375&mdash;Assignment 02</h1>
+  <h2>Part I: Write JavaScript code to validate Input</h2>
+
+  <p>Please validate the following <code>input</code> element using the rules mentioned below each one. An <code>input</code> element is just like any other element in HTML just that it allows one to enter text on one line. This is what is typically used to accept various such inputs on forms used on a webpage</p>
+  <p>You will notice that next to each of the submit button is associated with a function. You are supposed to write the function. I have added empty function bodies at the bottom in the <code>&lt;script&gt;</code> block</p>
+  <p>Next to each of the Submit button, you will see written in gray a label that says that the input is currently "unverified". Once you verify the input, you should replace this text with the text <span style="color: green;">verified</span>, or <span style="color: red;">error</span>. Use the exact strings and style as in this <code>.html</code> file for the sake of consistenty and automated testing</p>
+<hr>
+
+<span>Integer: </span>  <input id="number"> <button type="button" onclick="validateNumber()">Submit</button> <span style="color: gray;" id="number-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<p>
+  <ul>
+    <li>Should be an Integer between 1 and 100</li>
+    <li>Should not accept a string or any other value that is not an Integer</li>
+  </ul>
+</p>
+<hr>
+
+<span>Full Name: </span>  <input id="fullname"> <button type="button" onclick="validateFullname()">Submit</button> <span style="color: gray;" id="fullname-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<p>
+</p>
+  <ul>
+    <li>Should only contain two or three words</li>
+    <li>If it contains three words, then the first one should either me "Prof.", "Mr.", "Dr." or the last word should be "Jr.", "Sr.", or "Ph.D."</li>
+    <li>The two words should be capitalized</li>
+    <li>The words should not contain any numbers, and if it contains a punctuation it should only be a "-" in the last name</li>
+  </ul>
+<hr>
+
+<span>Email: </span>  <input id="email"> <button type="button" onclick="validateEmail()">Submit</button> <span style="color: gray;" id="email-result">unverified</span><span style="float: right;">(10 points)</span>
+<p>
+  <ul>
+    <li>Should end with one of the allowable Top Level Domains (TLD). <i>Hint: You can find a complete list on Wikipedia</i> </li>
+    <li>It should contain a @</li>
+    <li>The username (part before the '@') should only contain alphanumeric characters and a "-" or a ".". No other characters should be allowed</li>
+    <li>The username should be at most 20 characters long</li>
+  </ul>
+</p>
+<hr>
+
+<span>Password: </span>  <input id="password"> <button type="button" onclick="validatePassword()">Submit</button> <span style="color: gray;" id="password-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<p>The password should ...
+  <ul>
+    <li>contain at least one uppercase letter</li>
+    <li>contain at least one lowercase letter</li>
+    <li>contain at least one punctuation</li>
+    <li>contain at least one number</li>
+    <li>be at least 8 characters and at most 50 characters long</li>
+    <li>cannot contain spaces</li>
+    <li>cannot contain any repeated sub-strings of any length</li>
+    <li>cannot contain a substring or any space-separated word token occuring in the firstname, lastname, email, date of birth, month of birth, or year of birth</li>
+    <li><b>Extra points:</b> Disallow pasting in the password field</li>
+  </ul>
+</p>
+<hr>
+
+<span>Birth Date: </span>  <input id="date"> <button type="button" onclick="validateDate()">Submit</button> <span style="color: gray;" id="date-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<p>
+  <ul>
+    <li>Should be a valid date as accepted without any error by the Javascript <code>Date</code> module </li>
+    <li>The date should be at least 10 years before the current date</li>
+    <li>Once the date is accepted, and when the field loses focus you should replace the content of the input field with the following stadardized version YYYY/MM/DD.</li>
+  </ul>
+</p>
+<hr>
+
+<span>State: </span>  <input id="state"> <button type="button" onclick="validateState()">Submit</button> <span style="color: gray;" id="state-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<p>
+  <ul>
+    <li>Should be a two character abbreviation or a capitalized fullname. You should accept lowercase two characters if there is an exact match after converting them to uppercase. If they enter the capitalized name, then it should be entered in the correct case.</li>
+    <li>It should be validated by the list of state names and abbreviations in the file <code>us-states.json</code> file</li>
+    <li>When this input field looses focus, you should replace the contents with the normalized two character state in all uppercase</li>
+  </ul>
+</p>
+<hr>
+
+<span>Zipcode: </span>  <input id="zipcode"> <button type="button" onclick="validateZipcode()">Submit</button> <span style="color: gray;" id="zipcode-result">unverified</span><br><span style="float: right;">(10 points)</span>
+<p>
+  <ul>
+    <li>Should be five digit code optionally followed by a dash and another four digits as the allowed by the plus-four or ZIP+4 postal standard</li>
+    <li>The first five digit zipcode should be a valid zipcode. You will find a <code>valid-zipcodes.json</code> file in your repository. The content of the file is a <code>JSON</code> object. You can find out how to read a JSON object in Javascript at the following <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">MDN webpage</a></li>
+    <li><b>Extra points:</b> Ensure that the first digit of the zipcode belongs to the specified state by checking the rule mentioned in the plain text file <<code>first-digits-of-us-state-zipcodes.txt</code></li>
+    <li><b>Extra points:</b> Add the first digit rules to the <code>us-states.json</code> file and use that in the code</li>
+  </ul>
+</p>
+<hr>
+
+<h2>Part II: Move the JavaScript outside the HTML</h2><span style="float: right;">(10 points)</span>
+  <p> Move the JavaScript code to a <code>validate.js</code> file in the same directory instead of having the code be inside the .html document. Then add a link to that script in the .html file so that the earlier functionality is retained</p>
+
+<h2>Part III: Extract the styles to an linked stylesheet</h2>
+<p>Do the same with the inline styles that we currently have in the <code>.html</code> elements. And link the stylesheet <code>style.css</code> to the <code>.html</code> page as well</p><span style="float: right;">(10 points)</span>
+
+<h2>Part IV: Add the elements to a <code>table</code> for better alignment</h2><span style="float: right;">(10 points)</span>
+  <p>Once you are done writing the functions, modify the <code>.html</code> to include the elements in a table without any borders so that its purpsoe is to ensure that the elements are correctly aligned. Please left align the inputs and right align the labels that come before them.<br><b>Extra points:</b> Use <a href="https://getbootstrap.com/">Bootstrap 4</a> to style the table. You can find some getting started documentation on that page.</p>
+
+
+</body>
+</html>

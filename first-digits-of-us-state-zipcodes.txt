@@ -1,0 +1,12 @@
+The first digit of the ZIP Code is allocated as follows:
+
+0 = Connecticut (CT), Massachusetts (MA), Maine (ME), New Hampshire (NH), New Jersey (NJ), New York (NY, Fishers Island only), Puerto Rico (PR), Rhode Island (RI), Vermont (VT), Virgin Islands (VI), Army Post Office Europe (AE), Fleet Post Office Europe (AE)
+1 = Delaware (DE), New York (NY), Pennsylvania (PA)
+2 = District of Columbia (DC), Maryland (MD), North Carolina (NC), South Carolina (SC), Virginia (VA), West Virginia (WV)
+3 = Alabama (AL), Florida (FL), Georgia (GA), Mississippi (MS), Tennessee (TN), Army Post Office Americas (AA), Fleet Post Office Americas (AA)
+4 = Indiana (IN), Kentucky (KY), Michigan (MI), Ohio (OH)
+5 = Iowa (IA), Minnesota (MN), Montana (MT), North Dakota (ND), South Dakota (SD), Wisconsin (WI)
+6 = Illinois (IL), Kansas (KS), Missouri (MO), Nebraska (NE)
+7 = Arkansas (AR), Louisiana (LA), Oklahoma (OK), Texas (TX)
+8 = Arizona (AZ), Colorado (CO), Idaho (ID), New Mexico (NM), Nevada (NV), Utah (UT), Wyoming (WY)
+9 = Alaska (AK), American Samoa (AS), California (CA), Guam (GU), Hawaii (HI), Marshall Islands (MH), Federated States of Micronesia (FM), Northern Mariana Islands (MP), Oregon (OR), Palau (PW), Washington (WA), Army Post Office Pacific (AP), Fleet Post Office Pacific (AP)
