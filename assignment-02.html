@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="validate.js"></script>
   <script type="text/javascript" src="top-level-domains.json"></script>
   <script type="text/javascript" src="us-states.json"></script>
   <script type="text/javascript" src="valid-zipcodes.json"></script>
+
 </head>
 <body>
   <h1>CMPU-375&mdash;Assignment 02</h1>
@@ -14,9 +16,32 @@
   <p>You will notice that next to each of the submit button is associated with a function. You are supposed to write the function. I have added empty function bodies at the bottom in the <code>&lt;script&gt;</code> block</p>
   <p>Next to each of the Submit button, you will see written in gray a label that says that the input is currently "unverified". Once you verify the input, you should replace this text with the text <span style="color: green;">verified</span>, or <span style="color: red;">error</span>. Use the exact strings and style as in this <code>.html</code> file for the sake of consistenty and automated testing</p>
 <hr>
+<table>
+  <tr>
+   <td><span class="label">Integer </span>  <input id="number"> <button type="button" onclick="validateNumber()">Submit</button> <span id="number-result">unverified</span><br><span class="points">(10 points)</span></td>
+ </tr>
+ <tr>
+   <td><span class="label">Full Name </span>  <input id="fullname"> <button type="button" onclick="validateFullname()">Submit</button> <span id="fullname-result">unverified</span><br><span class="points">(10 points)</span></td>
+ </tr>
+ <tr>
+   <td><span class="label">Email </span>  <input id="email"> <button type="button" onclick="validateEmail()">Submit</button> <span id="email-result">unverified</span><br><span class="points">(10 points)</span></td>
+ </tr>
+ <tr>
+   <td><span class="label">Password </span>  <input id="password"> <button type="button" onclick="validatePassword()">Submit</button> <span id="password-result">unverified</span><br><span class="points">(10 points)</span></td>
+ </tr>
+ <tr>
+   <td><span class="label">Birth Date </span>  <input id="date"> <button type="button" onclick="validateDate()" onfocusout="genericDate()">Submit</button> <span id="date-result">unverified</span><br><span class="points">(10 points)</span></td>
+ </tr>
+ <tr>
+   <td><span class="label">State </span>  <input id="state"> <button type="button" onclick="validateState()">Submit</button> <span id="state-result">unverified</span><br><span class="points">(10 points)</span></td>
+</tr>
+<tr>
+   <td><span class="label">Zipcode </span>  <input id="zipcode"> <button type="button" onclick="validateZipcode()">Submit</button> <span id="zipcode-result">unverified</span><br><span class="points">(10 points)</span></td>
+ </tr>
+</table>
 
-<span>Integer: </span>  <input id="number"> <button type="button" onclick="validateNumber()">Submit</button> <span style="color: gray;" id="number-result">unverified</span><br><span style="float: right;">(10 points)</span>
 <p>
+  Integer should be ...
   <ul>
     <li>Should be an Integer between 1 and 100</li>
     <li>Should not accept a string or any other value that is not an Integer</li>
@@ -24,19 +49,21 @@
 </p>
 <hr>
 
-<span>Full Name: </span>  <input id="fullname"> <button type="button" onclick="validateFullname()">Submit</button> <span style="color: gray;" id="fullname-result">unverified</span><br><span style="float: right;">(10 points)</span>
+
 <p>
-</p>
+  Fullname should be ...
   <ul>
     <li>Should only contain two or three words</li>
     <li>If it contains three words, then the first one should either me "Prof.", "Mr.", "Dr." or the last word should be "Jr.", "Sr.", or "Ph.D."</li>
     <li>The two words should be capitalized</li>
     <li>The words should not contain any numbers, and if it contains a punctuation it should only be a "-" in the last name</li>
   </ul>
+  </p>
 <hr>
 
-<span>Email: </span>  <input id="email"> <button type="button" onclick="validateEmail()">Submit</button> <span style="color: gray;" id="email-result">unverified</span><span style="float: right;">(10 points)</span>
+
 <p>
+  Email should be ...
   <ul>
     <li>Should end with one of the allowable Top Level Domains (TLD). <i>Hint: You can find a complete list on Wikipedia</i> </li>
     <li>It should contain a @</li>
@@ -46,8 +73,9 @@
 </p>
 <hr>
 
-<span>Password: </span>  <input id="password"> <button type="button" onclick="validatePassword()">Submit</button> <span style="color: gray;" id="password-result">unverified</span><br><span style="float: right;">(10 points)</span>
-<p>The password should ...
+
+<p>
+  The password should ...
   <ul>
     <li>contain at least one uppercase letter</li>
     <li>contain at least one lowercase letter</li>
@@ -62,8 +90,9 @@
 </p>
 <hr>
 
-<span>Birth Date: </span>  <input id="date"> <button type="button" onclick="validateDate()" onfocusout="genericDate()">Submit</button> <span style="color: gray;" id="date-result">unverified</span><br><span style="float: right;">(10 points)</span>
+
 <p>
+  Date should be ...
   <ul>
     <li>Should be a valid date as accepted without any error by the Javascript <code>Date</code> module </li>
     <li>The date should be at least 10 years before the current date</li>
@@ -72,8 +101,9 @@
 </p>
 <hr>
 
-<span>State: </span>  <input id="state"> <button type="button" onclick="validateState()">Submit</button> <span style="color: gray;" id="state-result">unverified</span><br><span style="float: right;">(10 points)</span>
+
 <p>
+  A state is ...
   <ul>
     <li>Should be a two character abbreviation or a capitalized fullname. You should accept lowercase two characters if there is an exact match after converting them to uppercase. If they enter the capitalized name, then it should be entered in the correct case.</li>
     <li>It should be validated by the list of state names and abbreviations in the file <code>us-states.json</code> file</li>
@@ -82,8 +112,9 @@
 </p>
 <hr>
 
-<span>Zipcode: </span>  <input id="zipcode"> <button type="button" onclick="validateZipcode()">Submit</button> <span style="color: gray;" id="zipcode-result">unverified</span><br><span style="float: right;">(10 points)</span>
+
 <p>
+  A zipcode is ...
   <ul>
     <li>Should be five digit code optionally followed by a dash and another four digits as the allowed by the plus-four or ZIP+4 postal standard</li>
     <li>The first five digit zipcode should be a valid zipcode. You will find a <code>valid-zipcodes.json</code> file in your repository. The content of the file is a <code>JSON</code> object. You can find out how to read a JSON object in Javascript at the following <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">MDN webpage</a></li>
@@ -93,13 +124,13 @@
 </p>
 <hr>
 
-<h2>Part II: Move the JavaScript outside the HTML</h2><span style="float: right;">(10 points)</span>
+<h2>Part II: Move the JavaScript outside the HTML</h2><span class="points">(10 points)</span>
   <p> Move the JavaScript code to a <code>validate.js</code> file in the same directory instead of having the code be inside the .html document. Then add a link to that script in the .html file so that the earlier functionality is retained</p>
 
 <h2>Part III: Extract the styles to an linked stylesheet</h2>
-<p>Do the same with the inline styles that we currently have in the <code>.html</code> elements. And link the stylesheet <code>style.css</code> to the <code>.html</code> page as well</p><span style="float: right;">(10 points)</span>
+<p>Do the same with the inline styles that we currently have in the <code>.html</code> elements. And link the stylesheet <code>style.css</code> to the <code>.html</code> page as well</p><span class="points">(10 points)</span>
 
-<h2>Part IV: Add the elements to a <code>table</code> for better alignment</h2><span style="float: right;">(10 points)</span>
+<h2>Part IV: Add the elements to a <code>table</code> for better alignment</h2><span class="points">(10 points)</span>
   <p>Once you are done writing the functions, modify the <code>.html</code> to include the elements in a table without any borders so that its purpsoe is to ensure that the elements are correctly aligned. Please left align the inputs and right align the labels that come before them.<br><b>Extra points:</b> Use <a href="https://getbootstrap.com/">Bootstrap 4</a> to style the table. You can find some getting started documentation on that page.</p>
 
 

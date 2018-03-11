@@ -18,7 +18,7 @@ function error(result) {
 // Validates number if it is in the range [1 ... 100]
 function validateNumber() {
   var num = document.getElementById('number').value;
-  if (!isNaN(num) && (num % 1 === 0) && (num > 0 && num <= 100)) {
+  if (!isNaN(num) && (num % 1 === 0) && (num > 0 && num < 100)) {
     validate('number-result');
   }
   else {
@@ -63,6 +63,8 @@ function validateFullname() {
   if (pieces.length == 2) {
     // check for allCaps, check that first name is only letters
     // and last name is only letters or hyphen
+    var onlyLetters = new RegExp(/[a-zA-Z]/);
+    var lettersOrHyphen = new RegExp(/[-\w]/);
     if (allCaps(pieces)) {
       validate('fullname-result');
     }
@@ -186,6 +188,26 @@ function genericDate() {
 
 }
 
+
+//working except for the off-focus effect
+function validateState() {
+  var input = document.getElementById('state').value;
+  var bool = false;
+  for(var i=0; i<states.length; i++){
+    if((states[i].name == input) || (states[i].abbreviation == input.toUpperCase())){
+      bool = true;
+    }
+  }
+  if(bool){
+    validate('state-result');
+  }
+  else {
+    error('state-result');
+  }
+
+}
+
+//working except for bonus portions
 function validateZipcode() {
   var input = document.getElementById('zipcode').value;
   var ans = false;
@@ -220,24 +242,6 @@ function validateZipcode() {
   }
   else {
     error('zipcode-result');
-  }
-
-}
-
-//working except for the off-focus effect
-function validateState() {
-  var input = document.getElementById('state').value;
-  var bool = false;
-  for(var i=0; i<states.length; i++){
-    if((states[i].name == input) || (states[i].abbreviation == input.toUpperCase())){
-      bool = true;
-    }
-  }
-  if(bool){
-    validate('state-result');
-  }
-  else {
-    error('state-result');
   }
 
 }

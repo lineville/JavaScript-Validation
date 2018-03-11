@@ -1,0 +1,62 @@
+.points {
+  float: right;
+}
+
+.label {
+  float: right;
+}
+#number-result {
+  color: gray;
+}
+
+#fullname-result {
+  color: gray;
+}
+
+#email-result {
+  color: gray;
+}
+
+#password-result {
+  color: gray;
+}
+
+#date-result {
+  color: gray;
+}
+
+#state-result {
+  color: gray;
+}
+
+#zipcode-result {
+  color: gray;
+}
+
+#number {
+  float: left;
+}
+
+#fullname {
+  float: left;
+}
+
+#email {
+  float: left;
+}
+
+#password {
+  float: left;
+}
+
+#date {
+  float: left;
+}
+
+#state {
+  float: left;
+}
+
+#zipcode {
+  float: left;
+}
