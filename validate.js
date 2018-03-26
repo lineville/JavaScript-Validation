@@ -193,9 +193,11 @@ function genericDate() {
 function validateState() {
   var input = document.getElementById('state').value;
   var bool = false;
+  var index = 0;
   for(var i=0; i<states.length; i++){
     if((states[i].name == input) || (states[i].abbreviation == input.toUpperCase())){
       bool = true;
+      index = i;
     }
   }
   if(bool){
@@ -204,6 +206,8 @@ function validateState() {
   else {
     error('state-result');
   }
+  console.log(index);
+  return index;
 
 }
 
@@ -216,12 +220,13 @@ function validateZipcode() {
   function isValidZip(str) {
     var result = false;
     for (var i = 0; i < zips.length; i++) {
-      if (zips[i] == str) {
+      if (zips[i] == str && states[validateState()].firstdigit == str.charAt(0)) {
         result = true;
       }
     }
     return result;
   }
+
 
   //check if it has the optional 4 digits.
   if(input.length > 5 && (input.indexOf("-") > -1)){
