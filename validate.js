@@ -59,13 +59,15 @@ function validateFullname() {
   if (pieces.length < 2 || pieces.length > 3) {
     error('fullname-result');
   }
+  var onlyLetters = new RegExp(/[^\w\d\s:]/);
+  var lettersOrHyphen = RegExp(/[^-\w\d\s:]/);
+
   // if there is only a first and last name
   if (pieces.length == 2) {
     // check for allCaps, check that first name is only letters
     // and last name is only letters or hyphen
-    var onlyLetters = new RegExp(/[a-zA-Z]/);
-    var lettersOrHyphen = new RegExp(/[-\w]/);
-    if (allCaps(pieces)) {
+
+    if (allCaps(pieces) && !lettersOrHyphen.test(pieces[1]) && !onlyLetters.test(pieces[0])){
       validate('fullname-result');
     }
     else {
@@ -75,7 +77,8 @@ function validateFullname() {
   // if there are three words in the name
   if (pieces.length == 3) {
     // check for allCaps, and valid suffix and prefix
-    if (allCaps(pieces) && validPrefixOrSuffix(pieces)) {
+    if (allCaps(pieces) && validPrefixOrSuffix(pieces)
+        && !lettersOrHyphen.test(pieces[1])) {
       validate('fullname-result');
     }
     else {
