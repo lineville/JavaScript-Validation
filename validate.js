@@ -166,8 +166,21 @@ function validatePassword() {
     return true;
   }
 
+  function includesSubstring(str) {
+    var name = document.getElementById('fullname').value;
+    var email = document.getElementById('email').value;
+    var fulldate = new Date(document.getElementById('date').value);
+    var date = fulldate.getDate();
+    var month = fulldate.getMonth();
+    var year = fulldate.getFullYear();
+    var bigstring = name + email + date + month + year;
+    console.log(bigstring);
+    return bigstring.includes(str);
+
+  }
+
   if (containsCap(input) && containsLow(input) && noRepeatedChar(input) &&
-    containsNumberAndPunctuation(input) && !spaces(input) &&
+    !includesSubstring(input) && containsNumberAndPunctuation(input) && !spaces(input) &&
     input.length >= 8 && input.length <= 50) {
       validate('password-result');
   }
