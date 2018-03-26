@@ -59,15 +59,15 @@ function validateFullname() {
   if (pieces.length < 2 || pieces.length > 3) {
     error('fullname-result');
   }
-  var onlyLetters = new RegExp(/[^\w\d\s:]/);
-  var lettersOrHyphen = RegExp(/[^-\w\d\s:]/);
+  var onlyLetters = new RegExp(/^[a-zA-Z]+$/);
+  var lettersOrHyphen = new RegExp(/^[a-zA-Z-]+$/)
 
   // if there is only a first and last name
   if (pieces.length == 2) {
     // check for allCaps, check that first name is only letters
     // and last name is only letters or hyphen
 
-    if (allCaps(pieces) && !lettersOrHyphen.test(pieces[1]) && !onlyLetters.test(pieces[0])){
+    if (allCaps(pieces) && pieces[1].match(onlyLetters) && pieces[2].match(lettersOrHyphen)){
       validate('fullname-result');
     }
     else {
@@ -78,7 +78,8 @@ function validateFullname() {
   if (pieces.length == 3) {
     // check for allCaps, and valid suffix and prefix
     if (allCaps(pieces) && validPrefixOrSuffix(pieces)
-        && !lettersOrHyphen.test(pieces[1])) {
+        && ((pieces[1].match(lettersOrHyphen) && pieces[0].match(onlyLetters))
+            || pieces[2].match(lettersOrHyphen) && pieces[1].match(onlyLetters))) {
       validate('fullname-result');
     }
     else {
@@ -101,13 +102,13 @@ function validateEmail() {
 
   var username = input.split(/[@]/)[0]; // get username
   var extension = input.split(/[@]/)[1].split(/[.]/)[1]; //get extension
-  var pattern = new RegExp(/[^-@.\w\d\s:]/); // test of only valid chars
+  var pattern = new RegExp(/^[a-zA-Z-.]+$/); // test of only valid chars
 
   // check that username is at most 20 chars,
   // it does not match anything in pattern and valid TLD.
   if (username.length <= 20 &&
     (tld.indexOf(extension) > -1) &&
-    !pattern.test(username)) {
+    username.match(pattern)) {
       validate('email-result');
   }
   else {
@@ -199,7 +200,8 @@ function genericDate() {
   var month = date.getMonth() + 1;
   var day = date.getDate();
   data.value = year + "/" + month + "/" + day;
-  console.log("focus out");
+  //console.log("focus out");
+
 }
 
 
@@ -219,9 +221,20 @@ function validateState() {
   }
   else {
     error('state-result');
+    index = -1;
   }
-  console.log(index);
+  //console.log(index);
   return index;
+
+}
+
+function placeAbbreviation() {
+  var index = validateState();
+  console.log(index);
+  if(index <= 57 && index >= 0){
+    document.getElementById('state').value = states[index].abbreviation;
+    console.log('replaced');
+  }
 
 }
 
