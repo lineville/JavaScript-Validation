@@ -67,7 +67,7 @@ function validateFullname() {
     // check for allCaps, check that first name is only letters
     // and last name is only letters or hyphen
 
-    if (allCaps(pieces) && pieces[1].match(onlyLetters) && pieces[2].match(lettersOrHyphen)){
+    if (allCaps(pieces) && pieces[0].match(onlyLetters) && pieces[1].match(lettersOrHyphen)){
       validate('fullname-result');
     }
     else {
@@ -153,11 +153,20 @@ function validatePassword() {
     return spacetest.test(str);
   }
 
-  function containsRepeatedSubstring(str) {
-    return 0;
+  function noRepeatedChar(str) {
+    var found = new Array(str.length);
+    for(var i=0; i<str.length; i++){
+      if(found.indexOf(str.charAt(i)) > -1){
+        return false;
+      }
+      else{
+        found[i] = str.charAt(i);
+      }
+    }
+    return true;
   }
 
-  if (containsCap(input) && containsLow(input) &&
+  if (containsCap(input) && containsLow(input) && noRepeatedChar(input) &&
     containsNumberAndPunctuation(input) && !spaces(input) &&
     input.length >= 8 && input.length <= 50) {
       validate('password-result');
