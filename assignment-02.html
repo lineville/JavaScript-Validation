@@ -27,10 +27,10 @@
    <td><span class="label">Email </span>  <input id="email"> <button type="button" onclick="validateEmail()">Submit</button> <span id="email-result">unverified</span><br><span class="points">(10 points)</span></td>
  </tr>
  <tr>
-   <td><span class="label">Password </span>  <input id="password"> <button type="button" onclick="validatePassword()">Submit</button> <span id="password-result">unverified</span><br><span class="points">(10 points)</span></td>
+   <td><span class="label">Password </span>  <input id="password" onpaste="noPasting()"> <button type="button" onclick="validatePassword()">Submit</button> <span id="password-result">unverified</span><br><span class="points">(10 points)</span></td>
  </tr>
  <tr>
-   <td><span class="label">Birth Date </span>  <input id="date"> <button type="button" onclick="validateDate()" onfocusout="genericDate()">Submit</button> <span id="date-result">unverified</span><br><span class="points">(10 points)</span></td>
+   <td><span class="label">Birth Date </span>  <input type="text" id="date" onfocusout="genericDate()"> <button type="button" onclick="validateDate()">Submit</button> <span id="date-result">unverified</span><br><span class="points">(10 points)</span></td>
  </tr>
  <tr>
    <td><span class="label">State </span>  <input id="state"> <button type="button" onclick="validateState()">Submit</button> <span id="state-result">unverified</span><br><span class="points">(10 points)</span></td>
@@ -77,15 +77,15 @@
 <p>
   The password should ...
   <ul>
-    <li>contain at least one uppercase letter</li>
-    <li>contain at least one lowercase letter</li>
-    <li>contain at least one punctuation</li>
-    <li>contain at least one number</li>
-    <li>be at least 8 characters and at most 50 characters long</li>
-    <li>cannot contain spaces</li>
+    <li>contain at least one uppercase letter ... CHECK</li>
+    <li>contain at least one lowercase letter ... CHECK</li>
+    <li>contain at least one punctuation ... CHECK</li>
+    <li>contain at least one number ... CHECK</li>
+    <li>be at least 8 characters and at most 50 characters long ... CHECK</li>
+    <li>cannot contain spaces ... CHECK</li>
     <li>cannot contain any repeated sub-strings of any length</li>
     <li>cannot contain a substring or any space-separated word token occuring in the firstname, lastname, email, date of birth, month of birth, or year of birth</li>
-    <li><b>Extra points:</b> Disallow pasting in the password field</li>
+    <li><b>Extra points:</b> Disallow pasting in the password field ... CHECK</li>
   </ul>
 </p>
 <hr>
@@ -94,9 +94,9 @@
 <p>
   Date should be ...
   <ul>
-    <li>Should be a valid date as accepted without any error by the Javascript <code>Date</code> module </li>
-    <li>The date should be at least 10 years before the current date</li>
-    <li>Once the date is accepted, and when the field loses focus you should replace the content of the input field with the following stadardized version YYYY/MM/DD.</li>
+    <li>Should be a valid date as accepted without any error by the Javascript <code>Date</code> module ... CHECK</li>
+    <li>The date should be at least 10 years before the current date ... CHECK</li>
+    <li>Once the date is accepted, and when the field loses focus you should replace the content of the input field with the following stadardized version YYYY/MM/DD. ... CHECK</li>
   </ul>
 </p>
 <hr>
@@ -105,8 +105,8 @@
 <p>
   A state is ...
   <ul>
-    <li>Should be a two character abbreviation or a capitalized fullname. You should accept lowercase two characters if there is an exact match after converting them to uppercase. If they enter the capitalized name, then it should be entered in the correct case.</li>
-    <li>It should be validated by the list of state names and abbreviations in the file <code>us-states.json</code> file</li>
+    <li>Should be a two character abbreviation or a capitalized fullname. You should accept lowercase two characters if there is an exact match after converting them to uppercase. If they enter the capitalized name, then it should be entered in the correct case. ... CHECK</li>
+    <li>It should be validated by the list of state names and abbreviations in the file <code>us-states.json</code> file ... CHECK</li>
     <li>When this input field looses focus, you should replace the contents with the normalized two character state in all uppercase</li>
   </ul>
 </p>
@@ -116,10 +116,10 @@
 <p>
   A zipcode is ...
   <ul>
-    <li>Should be five digit code optionally followed by a dash and another four digits as the allowed by the plus-four or ZIP+4 postal standard</li>
-    <li>The first five digit zipcode should be a valid zipcode. You will find a <code>valid-zipcodes.json</code> file in your repository. The content of the file is a <code>JSON</code> object. You can find out how to read a JSON object in Javascript at the following <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">MDN webpage</a></li>
-    <li><b>Extra points:</b> Ensure that the first digit of the zipcode belongs to the specified state by checking the rule mentioned in the plain text file <<code>first-digits-of-us-state-zipcodes.txt</code></li>
-    <li><b>Extra points:</b> Add the first digit rules to the <code>us-states.json</code> file and use that in the code</li>
+    <li>Should be five digit code optionally followed by a dash and another four digits as the allowed by the plus-four or ZIP+4 postal standard ... CHECK</li>
+    <li>The first five digit zipcode should be a valid zipcode. You will find a <code>valid-zipcodes.json</code> file in your repository. The content of the file is a <code>JSON</code> object. You can find out how to read a JSON object in Javascript at the following <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse">MDN webpage</a> ... CHECK</li>
+    <li><b>Extra points:</b> Ensure that the first digit of the zipcode belongs to the specified state by checking the rule mentioned in the plain text file <<code>first-digits-of-us-state-zipcodes.txt</code> ... CHECK</li>
+    <li><b>Extra points:</b> Add the first digit rules to the <code>us-states.json</code> file and use that in the code ... CHECK</li>
   </ul>
 </p>
 <hr>
