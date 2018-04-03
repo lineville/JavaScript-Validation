@@ -48,7 +48,7 @@ function validateFullname() {
   function allCaps(words) {
     var ans = true;
     for (var i = 0; i < words.length; i++) {
-      if (words[i].charAt(0) == words[i].charAt(0).toLowerCase()) {
+      if (words[i].charAt(0) === words[i].charAt(0).toLowerCase()) {
         ans = false
       }
     }
