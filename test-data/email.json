@@ -1,0 +1,20 @@
+{
+  "valid": [
+    "lineville@vassar.edu",
+    "liam@vassar.com",
+    "liam@vassar.int",
+    "liam@vassar.org",
+    "liam@vassar.net",
+    "liam@vassar.gov",
+    "liam@vassar.mil",
+    "liam-neville.boom@something.com"
+
+  ],
+  "invalid": [
+    "waytoolongofausernamethisisrealasfsdfsfslybad@boing.com",
+    "liam@vassar.pop",
+    "liam&%^@something.com",
+    "noatsymbol.com"
+
+  ]
+}
