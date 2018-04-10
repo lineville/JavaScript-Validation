@@ -1,4 +1,4 @@
-states = [
+[
     {
         "name": "Alabama",
         "abbreviation": "AL",
@@ -294,4 +294,4 @@ states = [
         "abbreviation": "WY",
         "firstdigit": 8
     }
-];
+]

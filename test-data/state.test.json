@@ -6,6 +6,8 @@
   ],
   "invalid": [
     "NEW YORK",
-    "nyc"
+    "nyc",
+    "cali",
+    "state"
   ]
 }
