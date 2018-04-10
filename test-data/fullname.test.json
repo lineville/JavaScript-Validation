@@ -1,11 +1,16 @@
 {
   "valid": [
     "Sameer Pradhan",
-    "Mr. Sameer Pradhan",
-    "Sameer Pradhan Jr."
+    "Mr. Sameer Pra-dhan",
+    "Sameer Pra-dhan Jr."
   ],
   "invalid": [
     "Sameer",
-    "Mr. Sameer"
+    "Mr. Sameer",
+    "Too Many Names Man",
+    "Mister Liam Neville",
+    "Mr. liam neville",
+    "Mr. Li98 Neville",
+    "Mr. P-*%$ Sdf+ "
   ]
 }
