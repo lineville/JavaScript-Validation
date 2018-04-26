@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14f45795-985d-48eb-84c6-e2b65174295e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/test-data/state.test.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-data/state.test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,159 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="assignment-02.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assignment-02.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validate.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/validate.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
-              <folding>
-                <element signature="e#212#300#0" />
-                <element signature="e#306#393#0" />
-                <element signature="e#399#494#0" />
-                <element signature="e#500#588#0" />
-                <element signature="e#594#683#0" />
-                <element signature="e#689#780#0" />
-                <element signature="e#786#875#0" />
-                <element signature="e#881#973#0" />
-                <element signature="e#979#1068#0" />
-                <element signature="e#1074#1175#0" />
-                <element signature="e#1181#1292#0" />
-                <element signature="e#1298#1386#0" />
-                <element signature="e#1392#1480#0" />
-                <element signature="e#1486#1571#0" />
-                <element signature="e#1577#1664#0" />
-                <element signature="e#1670#1756#0" />
-                <element signature="e#1762#1851#0" />
-                <element signature="e#1857#1945#0" />
-                <element signature="e#1951#2036#0" />
-                <element signature="e#2042#2129#0" />
-                <element signature="e#2135#2224#0" />
-                <element signature="e#2230#2320#0" />
-                <element signature="e#2326#2412#0" />
-                <element signature="e#2418#2515#0" />
-                <element signature="e#2521#2610#0" />
-                <element signature="e#2616#2710#0" />
-                <element signature="e#2716#2805#0" />
-                <element signature="e#2811#2901#0" />
-                <element signature="e#2907#2999#0" />
-                <element signature="e#3005#3094#0" />
-                <element signature="e#3100#3188#0" />
-                <element signature="e#3194#3283#0" />
-                <element signature="e#3289#3376#0" />
-                <element signature="e#3382#3476#0" />
-                <element signature="e#3482#3573#0" />
-                <element signature="e#3579#3670#0" />
-                <element signature="e#3676#3765#0" />
-                <element signature="e#3771#3866#0" />
-                <element signature="e#3872#3965#0" />
-                <element signature="e#3971#4076#0" />
-                <element signature="e#4082#4167#0" />
-                <element signature="e#4173#4262#0" />
-                <element signature="e#4268#4355#0" />
-                <element signature="e#4361#4447#0" />
-                <element signature="e#4453#4546#0" />
-                <element signature="e#4552#4644#0" />
-                <element signature="e#4650#4743#0" />
-                <element signature="e#4749#4844#0" />
-                <element signature="e#4850#4943#0" />
-                <element signature="e#4949#5039#0" />
-                <element signature="e#5045#5131#0" />
-                <element signature="e#5137#5222#0" />
-                <element signature="e#5228#5316#0" />
-                <element signature="e#5322#5417#0" />
-                <element signature="e#5423#5512#0" />
-                <element signature="e#5518#5609#0" />
-                <element signature="e#5615#5709#0" />
-                <element signature="e#5715#5805#0" />
-                <element signature="e#5811#5899#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="valid-zipcodes.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/valid-zipcodes.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" lean-forward="true" selection-end-column="384129" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="password.test.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/password.test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="integer.test.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/integer.test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fullname.test.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/fullname.test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="email.test.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test-data/email.test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="state.test.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test-data/state.test.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="us-states.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/us-states.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="297" lean-forward="true" selection-end-line="297" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tld.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tld.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -205,8 +53,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="155" />
-    <option name="y" value="40" />
+    <option name="x" value="111" />
+    <option name="y" value="27" />
     <option name="width" value="1117" />
     <option name="height" value="687" />
   </component>
@@ -272,12 +120,13 @@
       <workItem from="1522786821782" duration="1250000" />
       <workItem from="1522863119218" duration="174000" />
       <workItem from="1522865581566" duration="848000" />
-      <workItem from="1523320702337" duration="7822000" />
+      <workItem from="1523320702337" duration="8007000" />
+      <workItem from="1523900533401" duration="103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10094000" />
+    <option name="totallyTimeSpent" value="10382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -289,44 +138,43 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="155" y="40" width="1117" height="687" extended-state="0" />
-    <editor active="true" />
+    <frame x="111" y="27" width="1117" height="687" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29514208" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32864675" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32991454" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32991454" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28119507" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.28051" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29577464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32991454" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.080267556" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32991454" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32991454" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -371,6 +219,76 @@
     <entry file="file://$PROJECT_DIR$/assignment-02.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/valid-zipcodes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-end-column="384129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/password.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/integer.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/fullname.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/email.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/state.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/us-states.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6831">
+          <caret line="297" lean-forward="true" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tld.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15801">
+          <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment-02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
           <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
         </state>
       </provider>
@@ -379,67 +297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1725">
           <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
-          <folding>
-            <element signature="e#212#300#0" />
-            <element signature="e#306#393#0" />
-            <element signature="e#399#494#0" />
-            <element signature="e#500#588#0" />
-            <element signature="e#594#683#0" />
-            <element signature="e#689#780#0" />
-            <element signature="e#786#875#0" />
-            <element signature="e#881#973#0" />
-            <element signature="e#979#1068#0" />
-            <element signature="e#1074#1175#0" />
-            <element signature="e#1181#1292#0" />
-            <element signature="e#1298#1386#0" />
-            <element signature="e#1392#1480#0" />
-            <element signature="e#1486#1571#0" />
-            <element signature="e#1577#1664#0" />
-            <element signature="e#1670#1756#0" />
-            <element signature="e#1762#1851#0" />
-            <element signature="e#1857#1945#0" />
-            <element signature="e#1951#2036#0" />
-            <element signature="e#2042#2129#0" />
-            <element signature="e#2135#2224#0" />
-            <element signature="e#2230#2320#0" />
-            <element signature="e#2326#2412#0" />
-            <element signature="e#2418#2515#0" />
-            <element signature="e#2521#2610#0" />
-            <element signature="e#2616#2710#0" />
-            <element signature="e#2716#2805#0" />
-            <element signature="e#2811#2901#0" />
-            <element signature="e#2907#2999#0" />
-            <element signature="e#3005#3094#0" />
-            <element signature="e#3100#3188#0" />
-            <element signature="e#3194#3283#0" />
-            <element signature="e#3289#3376#0" />
-            <element signature="e#3382#3476#0" />
-            <element signature="e#3482#3573#0" />
-            <element signature="e#3579#3670#0" />
-            <element signature="e#3676#3765#0" />
-            <element signature="e#3771#3866#0" />
-            <element signature="e#3872#3965#0" />
-            <element signature="e#3971#4076#0" />
-            <element signature="e#4082#4167#0" />
-            <element signature="e#4173#4262#0" />
-            <element signature="e#4268#4355#0" />
-            <element signature="e#4361#4447#0" />
-            <element signature="e#4453#4546#0" />
-            <element signature="e#4552#4644#0" />
-            <element signature="e#4650#4743#0" />
-            <element signature="e#4749#4844#0" />
-            <element signature="e#4850#4943#0" />
-            <element signature="e#4949#5039#0" />
-            <element signature="e#5045#5131#0" />
-            <element signature="e#5137#5222#0" />
-            <element signature="e#5228#5316#0" />
-            <element signature="e#5322#5417#0" />
-            <element signature="e#5423#5512#0" />
-            <element signature="e#5518#5609#0" />
-            <element signature="e#5615#5709#0" />
-            <element signature="e#5715#5805#0" />
-            <element signature="e#5811#5899#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -471,44 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-data/date.test.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/zipcode.test.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/password.test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/integer.test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/fullname.test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-data/email.test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -519,92 +342,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tld.json">
+    <entry file="file://$PROJECT_DIR$/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/us-states.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="297" lean-forward="true" selection-end-line="297" />
+        <state relative-caret-position="2553">
+          <caret line="313" column="9" lean-forward="true" selection-start-line="313" selection-start-column="9" selection-end-line="313" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/valid-zipcodes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="12" lean-forward="true" selection-end-column="384129" />
+          <caret column="12" selection-end-column="384129" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/validate.js">
+    <entry file="file://$PROJECT_DIR$/test-data/password.test.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="303" lean-forward="true" selection-start-line="303" selection-end-line="303" />
-          <folding>
-            <element signature="e#212#300#0" />
-            <element signature="e#306#393#0" />
-            <element signature="e#399#494#0" />
-            <element signature="e#500#588#0" />
-            <element signature="e#594#683#0" />
-            <element signature="e#689#780#0" />
-            <element signature="e#786#875#0" />
-            <element signature="e#881#973#0" />
-            <element signature="e#979#1068#0" />
-            <element signature="e#1074#1175#0" />
-            <element signature="e#1181#1292#0" />
-            <element signature="e#1298#1386#0" />
-            <element signature="e#1392#1480#0" />
-            <element signature="e#1486#1571#0" />
-            <element signature="e#1577#1664#0" />
-            <element signature="e#1670#1756#0" />
-            <element signature="e#1762#1851#0" />
-            <element signature="e#1857#1945#0" />
-            <element signature="e#1951#2036#0" />
-            <element signature="e#2042#2129#0" />
-            <element signature="e#2135#2224#0" />
-            <element signature="e#2230#2320#0" />
-            <element signature="e#2326#2412#0" />
-            <element signature="e#2418#2515#0" />
-            <element signature="e#2521#2610#0" />
-            <element signature="e#2616#2710#0" />
-            <element signature="e#2716#2805#0" />
-            <element signature="e#2811#2901#0" />
-            <element signature="e#2907#2999#0" />
-            <element signature="e#3005#3094#0" />
-            <element signature="e#3100#3188#0" />
-            <element signature="e#3194#3283#0" />
-            <element signature="e#3289#3376#0" />
-            <element signature="e#3382#3476#0" />
-            <element signature="e#3482#3573#0" />
-            <element signature="e#3579#3670#0" />
-            <element signature="e#3676#3765#0" />
-            <element signature="e#3771#3866#0" />
-            <element signature="e#3872#3965#0" />
-            <element signature="e#3971#4076#0" />
-            <element signature="e#4082#4167#0" />
-            <element signature="e#4173#4262#0" />
-            <element signature="e#4268#4355#0" />
-            <element signature="e#4361#4447#0" />
-            <element signature="e#4453#4546#0" />
-            <element signature="e#4552#4644#0" />
-            <element signature="e#4650#4743#0" />
-            <element signature="e#4749#4844#0" />
-            <element signature="e#4850#4943#0" />
-            <element signature="e#4949#5039#0" />
-            <element signature="e#5045#5131#0" />
-            <element signature="e#5137#5222#0" />
-            <element signature="e#5228#5316#0" />
-            <element signature="e#5322#5417#0" />
-            <element signature="e#5423#5512#0" />
-            <element signature="e#5518#5609#0" />
-            <element signature="e#5615#5709#0" />
-            <element signature="e#5715#5805#0" />
-            <element signature="e#5811#5899#0" />
-          </folding>
+        <state relative-caret-position="111">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/integer.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/fullname.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-data/email.test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -612,6 +388,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/us-states.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="297" lean-forward="true" selection-end-line="297" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tld.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
